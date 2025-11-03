@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khalid Real Estate - About Us</title>
+  <link rel="stylesheet" href="contuctus.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+    
+      line-height: 1.6;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    /* Header style (Placeholder) */
+    header {
+      background-color: #222;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      font-size: 24px;
+      font-family: 'Montserrat', sans-serif;
+      animation: fadeIn 1s ease;
+    }
+
+    /* Footer style (Placeholder) */
+    footer {
+      background-color: #222;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      margin-top: 40px;
+      animation: fadeIn 1s ease;
+    }
+
+    /* Fade-in animation for header and footer */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Container for all sections */
+    .about-us-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* Section styles */
+    .section {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 50px;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 30px;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    /* Animate when in view */
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Overlay for readability */
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      border-radius: 12px;
+    }
+
+    /* Content styles */
+    .content {
+      position: relative;
+      max-width: 800px;
+      text-align: center;
+      padding: 20px;
+      z-index: 1;
+    }
+
+    .content h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.8em;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    .content p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      font-size: 1em;
+      font-weight: 600;
+      color: #fff;
+      background-color: #0069d9;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .btn:hover {
+      background-color: #0053ba;
+      transform: translateY(-2px);
+    }
+
+    /* Responsive styles */
+    @media(max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+      .content h2 {
+        font-size: 2em;
+      }
+      .btn {
+        padding: 12px 24px;
+        font-size: 0.9em;
+      }
+    }
+
+    @media(max-width: 480px) {
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 14px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Existing Header -->
+  <div class="header">
+    <!-- Hamburger menu -->
+    <div class="menu-icon" id="menuIcon" title="Menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="/houses/89-898495_house-logo-png-home-address-logo-png.png" alt="Logo" class="logo-img" />
+      <span class="logo-text">Khalid</span>
+    </div>
+    <!-- Search box -->
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search your home..." />
+      <img src="Icons/search.png" alt="Search" class="search-icon" />
+    </div>
+  </div>
+
+  <!-- Dropdown menu -->
+  <div class="menu" id="menu">
+    <a href="index.html" class="menu-item">Home</a>
+    <a href="FAQ.html" class="menu-item">FAQ</a>
+    <a href="about us.html" class="menu-item">About</a>
+    <a href="contuct us.html" class="menu-item">Contact</a>
+  </div>
+
+ <div class="about-us-container">
+    <!-- About Us -->
+    <section class="section" style="background-image: url('/houses/2-bedroom-2.webp'); background-size: cover;">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>About Us</h2>
+        <p>Khalid Real Estate is dedicated to providing exceptional property services with integrity and professionalism. We are committed to helping clients find their perfect home or investment property.</p>
+        <a href="contuct us.html" class="btn">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="section" style="background-color: #001024;">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Our Story</h2>
+        <p>Founded with passion and expertise, Khalid Real Estate has grown into a trusted name in the industry. Our journey is driven by a desire to serve our clients with honesty and dedication.</p>
+        <a href="#learn-more" class="btn">Learn More</a>
+      </div>
+    </section>
+
+ 
+    <section class="section" style="background-image: url('/houses/4-bedroom1.webp'); background-size: cover;">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Our Mission</h2>
+        <p>Our mission is to deliver outstanding service, innovative solutions, and personalized attention to each client, making every real estate experience seamless and successful.</p>
+        <a href="#get-started" class="btn">Get Started</a>
+      </div>
+    </section>
+
+    <section class="section" style="background-image: url('/houses/oneroom2.webp'); background-size: cover;">
+      <div class="overlay"></div>
+      <div class="content" id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to find your dream property? Contact Khalid Real Estate today and let us guide you every step of the way.</p>
+        <a href="contuct us.html" class="btn">Contact Form</a>
+      </div>
+    </section>
+  </div>
+
+  <form action="footer" class="footer">
+    <div class="all-links">
+      <p>
+        <a href="#" class="footer-link">Home</a>
+        <a href="#" class="footer-link">FAQ</a>
+        <a href="#" class="footer-link">About</a>
+        <a href="#" class="footer-link">Contact</a>
+        <a href="#" class="footer-link">Gallery</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Terms of Service</a>
+        <a href="#" class="footer-link">Sitemap</a>
+        <a href="#" class="footer-link">Careers</a>
+        <a href="#" class="footer-link">Blog</a>
+        <a href="#" class="footer-link">Support</a>
+        <a href="#" class="footer-link">Advertising</a>
+        <a href="#" class="footer-link">Marketing</a>
+        <a href="#" class="footer-link">Real Estate Agents</a>
+      </p>
+      <p>
+        <a href="#" class="footer2-link">Facebook</a>
+        <a href="#" class="footer2-link">Instagram</a>
+        <a href="#" class="footer2-link">LinkedIn</a>
+        <a href="#" class="footer2-link">YouTube</a>
+        <a href="#" class="footer2-link">Pinterest</a>
+        <a href="#" class="footer2-link">WhatsApp</a>
+        <a href="#" class="footer3-link">Press</a>
+        <a href="#" class="footer3-link">Marketing</a>
+      </p>
+      <p>
+        <a href="#" class="footer3-link">Feedback</a>
+        <a href="#" class="footer3-link">Affiliates</a>
+        <a href="#" class="footer3-link">Investors</a>
+        <a href="#" class="footer3-link">Partnerships</a>
+      </p>
+    </div>
+    <div class="mainapps">
+      <div class="logo">
+        <img src="/houses/89-898495_house-logo-png-home-address-logo-png.png" alt="Logo" class="logo-img" />
+        <span class="logo-text">Khalid</span>
+      </div>
+      <p>Follow us:</p>
+      <div class="FB">
+        <a href="https://www.facebook.com/khalid.abdi.94214508" class="fb-link"><img src="Icons/facebook.jpg"></a>
+        <a href="https://www.instagram.com/khalidabdirashid70/" class="ig-link"><img src="Icons/instagram.png"></a>
+        <a href=""><img src="Icons/WhatsApp.svg.webp"></a>
+      </div>
+      <p>&copy; 2006-2025 Khalid</p>
+      <div class="home-icon">
+        <a href="home.html"><img src="Icons/homeicon.jpg" alt="Home"></a>
+      </div>
+    </div>
+  </form>
+
+  <script src="contuctus.js"></script>
+</body>
+</html>
