@@ -13,7 +13,7 @@
             <span class="logo-text">Khalid</span>
         </div>
         <div class="sign">
-            <a href="#" class="sign-in"><button>log in</button></a> 
+            <a href="#" class="sign-in"><button class="login-btn" id="loginBtn">log in</button></a> 
         </div>
     </div>
     <div class="menu">
@@ -138,10 +138,17 @@
             <p>&copy; 2006-2025 Khalid</p>
             <div class="home-icon">
                 <a href="home.html"><img src="Icons/homeicon.jpg" alt="Home"></a>
-                <script src="home.js"></script>
+               
             </div>
         </div>
     </form>
-    
+    <script src="home.js"></script>
+     <script>
+  document.getElementById('loginBtn').addEventListener('click', function() {
+    // Replace 'login.html' with your actual login page URL
+    window.location.href = 'login.html';
+  });
+</script>
+
 </body>
 </html>
