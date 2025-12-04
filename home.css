@@ -320,6 +320,56 @@
     height: auto;
     background-color: #ffffff;
 }
+@media(max-width: 600px){
+    .section3, .section4, .section5{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    .pics{
+        margin-top: 20px;
+        height: 200px;
+    }
+    .adds a button{
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .footer{
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .footer-link, .footer2-link, .footer3-link{
+        font-size: 4px;
+    }
+    
+    .FB{
+       
+        justify-content: center;
+    }
+    .home-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .home-icon a img{
+        width: 30px;
+        height: 30px;
+    }
+    .logo img{
+        height: 30px;
+        width: 30px;
+    }
+    .logo span{
+        font-size: 12px;
+    }
+    .FB a img{
+        width: 30px;
+        height: 30px;
+    }
+    .mainapps p{
+        font-size: 8px;
+    }
+}
 .all-links{
     text-align: center;
     justify-content: center;
