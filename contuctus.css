@@ -7,12 +7,31 @@
        box-shadow: 0 4px 6px -2px rgba(31, 14, 157, 0.322);
     }
     @media(max-width:600px){
-      .body
+      .body{
+        height: max-content;
+        width: 100%;
+      }
       .header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
       }
+      .search-container input{
+        display: none;
+      }
+      .search-container img{
+        display: none;
+      }
+      .search-container{
+        border:none;
+        
+      }
+      .logo img {
+        display:none;
+      }
       
+      .logo span{
+        display: none;
+      }
     .all-sections{
       display: grid;
         justify-content: center;
