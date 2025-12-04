@@ -179,8 +179,10 @@
       background-color: #f7f7f7;
       margin-top: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-top: 8px solid #b16363;
+    }
+    .section2:hover{
+      box-shadow: 0 0 3px 1px rgb(0, 191, 255);
     }
     .section2 label{
         font-size: 18px;
@@ -223,7 +225,7 @@
     }
     .section3 input:focus{
         outline: none;
-        border-bottom: 2px solid #20a7cc;
+        border-bottom: 1px solid #20a7cc;
     }
     .section3 select{
         font-size: 16px;
