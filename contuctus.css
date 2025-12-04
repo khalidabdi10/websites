@@ -6,6 +6,29 @@
       background-color: rgb(243, 243, 243);
        box-shadow: 0 4px 6px -2px rgba(31, 14, 157, 0.322);
     }
+    @media(max-width:600px){
+      .body
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+    .all-sections{
+      display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1,.section2,.section3,.section9,.section10,.section11{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      
+    }
+    
+    }
+
+  
     .body1{
       background-color: rgb(0, 1, 49);
     }
