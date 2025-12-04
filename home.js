@@ -34,6 +34,3 @@ const houses = [
   { label: '3 Bedroom House', imageUrl: 'https://via.placeholder.com/300x200?text=3+Bedrooms' },
   // Add more as needed
 ];
-document.getElementById('loginBtn').addEventListener('click', function() {
-    window.location.href = 'login.html'; // or your login page URL
-  });
